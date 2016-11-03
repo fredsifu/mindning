@@ -1,0 +1,9 @@
+<template name="Brain">
+  {{> quickForm collection="Ideas" id="insertIdeaForm" type="insert" class="new-idea-form" template="bootstrap3-inline" label-class="sr-only" afFieldInput-placeholder="Idea" buttonContent="Contribute!"}}
+  <div id="vis"></div>
+  <div class="render-area">
+    {{#each ideas}}
+      {{name}}<br />
+    {{/each}}
+  </div>
+</template>
